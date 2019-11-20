@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset id="form">
+        <legend>Search Criteria:</legend>
+        <div class="row">
+          <div class="input-field col s3">
+            <select name="orgType" id="orgType" class="browser-default">
+              <option value="">Organisation Type</option>
+            </select>
+          </div>
+          <div class="input-field col s3">
+            <label for="orgName">Organisation Name</label>
+            <input type="text" id="orgName" value="Some Hosp" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s3">
+            <select name="state" id="state" class="browser-default">
+              <option value="">State</option>
+            </select>
+          </div>
+
+          <div class="input-field col s3">
+            <select name="county" id="county" class="browser-default">
+              <option value="">County</option>
+            </select>
+          </div>
+
+          <div class="input-field col s3">
+            <select name="city" id="city" class="browser-default">
+              <option value="">City</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s3">
+            <label for="zip">ZIP code</label>
+            <input type="text" id="zip" />
+          </div>
+        </div>
+
+        <button id="resultBtn">Show Result</button>
+        <input id="resetBtn" type="button" value="Reset Form" />
+      </fieldset>
+
+      <div id="result"></div>
+
+      <div id="details" class="modal">
+        <p>Thanks for clicking. That felt good.</p>
+        <a href="#" rel="modal:close">Close</a>
+      </div>
+    </div>
+
+    <script src="js/Project.js"></script>
+    <script src="js/GeneralTab.js"></script>
+    <script src="js/TreatmentTab.js"></script>
+    <script src="js/TrainingTab.js"></script>
+    <script src="js/FacilitiesTab.js"></script>
+    <script src="js/PeopleTab.js"></script>
+    <script src="js/LocationTab.js"></script>
+    <script src="js/PhysiciansTab.js"></script>
+    <script src="js/DetailTabs.js"></script>
+  </body>
+</html>

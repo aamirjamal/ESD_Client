@@ -1,0 +1,8 @@
+#form {
+  background-color: rgb(224, 224, 228);
+}
+
+.modal {
+  max-width: 900px;
+  min-height: 550px;
+}
